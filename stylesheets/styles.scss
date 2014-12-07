@@ -5,7 +5,7 @@
 $serif: 'Lato';
 $sans-serif: 'Merriweather';
 $first-break: 550px;
-$second-break: 940px;
+$second-break: 900px;
 
 /* ========================================================================
 							CSS RESET
@@ -236,22 +236,28 @@ body {
 
 h1 {
     font-size: 5em;
+    color: #3A3A3A;
 }
 h2 {
     font-size: 4em;
+    color: #3A3A3A;
 }
 h3 {
     font-size: 3em;
+    color: #3A3A3A;
 }
 h4 {
-    font-size: 2em;
+    font-size: 1.6em;
+    color: #3A3A3A;
 }
 h5 {
     font-size: 1em;
+    color: #3A3A3A;
 }
 p {
     font-size: 1em;
     font-weight: 300;
+    color: #3A3A3A;
 }
 
 /* ========================================================================
@@ -261,12 +267,14 @@ p {
 /* NAVIGATION */
 
 div.header {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 4px solid #ccc;
+	position: relative;
 
 	div.labels {
 		display: inline-block;
 
 		h3 {
+			margin: .25em 0;
 		}
 
 		p.highlight {
@@ -274,37 +282,51 @@ div.header {
 			font-family: $serif;
 			display: inline-block;
 			clear: both;
+			margin-bottom: .5em;
+			font-weight: 500;
 		}
 	}
 
 	ul.nav {
+		position: relative;
+		bottom: 0;
 		display: inline-block;
 
-		@media screen and (min-width: $second-break) {
-			position: relative;
-			bottom: 0;
+		@media screen and (min-width: $first-break) {
+			margin-left: 1.5em;
 		}	
 
-	li {
-		float: left;
-		margin-right: 1em;
-		background-color: #ccc;
-		width: 100px;
-		height: 27px;
-		text-align: center;
-		margin-top: .5em;
-		padding-top: 2px;
+		@media screen and (min-width: $second-break) {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}	
 
-	}
+		li {
+			float: left;
+			margin-right: 1em;
+			background-color: #ccc;
+			width: 170px;
+			height: 40px;
+			text-align: center;
+			margin-top: .5em;
+			padding-top: 2px;
 
-	a {
-		color: white;
-		text-decoration: none;
-		display: block;
-		height: 100%;
-		font-family: $serif;
+			@media screen and (max-width: $second-break) {
+				width: 100px;
+				height:30px;
+			}
+
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			display: block;
+			height: 100%;
+			font-family: $serif;
+		}
 	}
-}
 }
 
 /* WELCOME */
@@ -329,7 +351,7 @@ div.recent {
 /* A POST */
 
 div.a-post {
-	margin-top: 1em;
+	margin-top: 3em;
 	margin-right: 2em;
 	display: inline-block;
 
@@ -375,6 +397,101 @@ div.a-post {
 }
 
 /* IMAGES */
+
+
+.custom-tabs {
+margin: 1em 0;
+	a.social-links {
+		position: relative;
+		padding: 5px;
+		width: 280px;
+		height: 50px;
+		background-color: #ccc;
+		color: white;
+		display: inline-block;
+		margin-bottom: .5em;
+
+		div.icon.github {
+			height: 50px;
+			width: 50px;
+			background-size: cover;
+			background-image: url(../images/github.png);
+			float: left;
+		}
+
+		div.icon.linkedin {
+			height: 50px;
+			width: 50px;
+			background-size: cover;
+			background-image: url(../images/linkedin.png);
+			float: left;
+		}
+
+		div.tag {
+			border-left: 1px solid #bbb;
+			margin-left: 7px;
+			display: inline-block;
+			height: 100%;
+			padding-left: 5px;
+
+			p {
+				font-family: $serif;
+				margin: 0;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				display: inline-block;
+			}
+		}
+	}
+}
+
+input[type="text"] {
+	width: 300px;
+	height: 27px;
+	margin-bottom: 1em;
+	font-size: .75em;
+}
+
+textarea {
+margin-top: .5em;
+font-size: .75em;
+}
+
+.footer {
+background-color: #ccc;
+height: 100px;
+
+	div.gd-center {
+		padding: 0;
+	}
+
+	p {
+		padding-top: 1em;
+		font-family: $serif;
+		line-height: normal;
+		color: white;
+	}
+}
+
+a.resume {
+	transition: .5s;
+	color: blue;
+
+}
+
+a.resume:hover {
+	color: #ccc;
+}
+
+.red-square {
+background-color: red;
+height: 0.4em;
+width: 0.4em;
+position: absolute;
+right: -4px;
+bottom: 7px;
+}
 
 /* ========================================================================
 							MEDIA QUERIES

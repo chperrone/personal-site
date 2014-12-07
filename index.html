@@ -7,6 +7,19 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic|Merriweather:400italic,400,900,300italic,300,700,700italic,900italic' rel='stylesheet' type='text/css'>
 
+<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/browserconfig.xml">
+
 </head>
 <body>
 <div class="gd-center">
@@ -24,7 +37,9 @@
 </div>
 
 <div class="welcome">
-	<h4>Welcome to my site.</h4>
+	<div style="position: relative; display: inline-block">
+		<h4 style="display: inline-block">Welcome to my site.</h4>
+	</div>
 
 	<div class="gd-8">
 		<p>I created this place so that I could share my work with people who
@@ -33,7 +48,7 @@
 
 		<p>
 		Please take a peek around at what I've been up to. As always, feel
-		free to reach out to me if you have any questions or would like to
+		free to reach out if you have any questions or would like to
 		speak with me.
 		</p>
 		
@@ -41,13 +56,32 @@
 </div>
 
 <div class="recent">
-	<div class="gd-12">
+	<div class="gd-12" style="border-bottom: 4px solid #ccc;
+padding-bottom: .5em">
 		<h4>Recent Happenings.</h4>
 	</div>
 
-	<div class="a-post gd-5">
+	<div class="gd-6">
+
+		<div class="a-post">
+			<div class="text-content">
+				<h5>Comedy Site</h5>
+				<p class="date-time">Published: 11/11/14, 6:43 a.m.</p>
+				<p class="meat">This year I took a web development
+					and design course. In the course,
+					taught by Alex Turnwall, we learned
+					elements of good design including
+					skuemorphism, affordances...
+				</p>
+			</div>
+			<div id="bowie" class="image">
+				<img src="images/bowie.jpg">
+			</div>
+		</div>
+
+		<div class="a-post">
 		<div class="text-content">
-			<h5>Comedy Site</h5>
+			<h5>Tonegen</h5>
 			<p class="date-time">Published: 11/11/14, 6:43 a.m.</p>
 			<p class="meat">This year I took a web development
 				and design course. In the course,
@@ -57,11 +91,13 @@
 			</p>
 		</div>
 		<div id="bowie" class="image">
-			<img src="images/bowie.jpg">
+			<img src="images/bowie3.jpg">
 		</div>
 	</div>
+	</div>
 
-	<div class="a-post gd-5">
+	<div class="gd-6 last">
+		<div class="a-post">
 		<div class="text-content">
 			<h5>Tonegen</h5>
 			<p class="date-time">Published: 11/11/14, 6:43 a.m.</p>
@@ -76,11 +112,20 @@
 			<img src="images/bowie2.jpg">
 		</div>
 	</div>
+	</div>
 
 </div>
 
 </div><!-- CLOSES GD SECTION -->
 
+<div class="footer">
+<div class="gd-center">
+	<p>
+	Copyright: Charles Perrone<br>
+All Rights Reserved 2014
+</p>
+</div>
+</div>
 	
 </body>
 </html>
