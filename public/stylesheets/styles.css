@@ -467,3 +467,42 @@ input[type="submit"]:hover {
 /* ========================================================================
 							MEDIA QUERIES
 ======================================================================== */
+
+/* ========================================================================
+              PROJECT PAGES
+======================================================================== */
+
+div.projects {
+  margin-top: 1em;
+}
+
+div.a-project {
+
+}
+
+div.a-project > h4 {
+  background-color: #ccc;
+  color: white;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+div.a-project > p {
+  font-family: "Lato";
+  font-size: .9em;
+  margin-bottom: 1em;
+  width: 70%;
+}
+
+div.a-project > div.two-images {
+}
+
+div.a-project > div.two-images > img {
+  width: 48%;
+}
+
+div.a-project > div.two-images > img.last {
+
+}
+
+
