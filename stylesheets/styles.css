@@ -338,6 +338,9 @@ div.a-post {
   margin-top: 2em;
   margin-right: 2em;
   display: inline-block; }
+  @media screen and (max-width: 550px) {
+    div.a-post {
+      margin-right: 0; } }
   div.a-post div.text-content {
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
